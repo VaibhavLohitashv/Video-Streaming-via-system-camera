@@ -62,7 +62,7 @@ public class VideoServer extends Thread{
                 videoCapture.release();
             }
         } catch (IOException e) {
-            System.err.println(e);
+            e.printStackTrace();
         }
     }
 }
