@@ -6,6 +6,6 @@ First Run the Server java file it will wait until a Client gets connected.
 So to connect a Client, run the Client java file.
 A GUI will pop and the streaming will start.
 
-NOTE:  This is just a simple college semester leve; project and furthur development can be done.
+NOTE:  This is just a simple college semester level project and furthur development can be done.
 
 THANK YOU
