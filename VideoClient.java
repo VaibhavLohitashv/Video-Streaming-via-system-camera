@@ -25,6 +25,11 @@ public class VideoClient extends Thread{
                 DataInputStream dataInputStream = new DataInputStream(socket.getInputStream());
 
                 while (true) {
+                    // try {
+                    //     Thread.sleep(100);
+                    // } catch (InterruptedException e) {
+                    //     e.printStackTrace();
+                    // }
                     // Receive the length of the frame
                     int frameLength = dataInputStream.readInt();
 
@@ -41,7 +46,7 @@ public class VideoClient extends Thread{
                         // Check if the frame is not empty before displaying
                         if (!frame.empty()) {
                             HighGui.imshow("Video Client", frame);
-                            HighGui.waitKey(1);
+                            HighGui.waitKey(10);
                         } else {
                             System.err.println("Warning: Received empty or corrupted frame from the server.");
                         }
@@ -52,7 +57,7 @@ public class VideoClient extends Thread{
                 }
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("SERVER DOWN "+e.getMessage());
         }
     }
 }
