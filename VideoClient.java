@@ -41,7 +41,7 @@ public class VideoClient extends Thread{
                         // Check if the frame is not empty before displaying
                         if (!frame.empty()) {
                             HighGui.imshow("Video Client", frame);
-                            HighGui.waitKey(50);
+                            HighGui.waitKey(1);
                         } else {
                             System.err.println("Warning: Received empty or corrupted frame from the server.");
                         }
