@@ -8,4 +8,6 @@ A window will pop and the streaming will start.
 
 NOTE:  This is just a simple project and furthur development can be done.
 
+WARNING !! : Please install OpenCV library for java and configure the dll files with the project. Without installation the rpoject will not work as it contains classes and utilitie from OpenCV.
+
 THANK YOU
