@@ -4,7 +4,7 @@ It contains a readme file, word file that is the project report, a Server java f
 You can run the project without he Streaming java file.
 First Run the Server java file it will wait until a Client gets connected.
 So to connect a Client, run the Client java file.
-A GUI will pop and the streaming will start.
+A window will pop and the streaming will start.
 
 NOTE:  This is just a simple project and furthur development can be done.
 
